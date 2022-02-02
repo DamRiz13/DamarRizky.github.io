@@ -12,6 +12,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!--link animasi-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- mycss -->
     <link rel="stylesheet" href="style.css" />
 
@@ -68,10 +71,10 @@
             <h2>About Me</h2>
           </div>
           <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-right">
               <p>Hi, I'm Damar Rizky Ramadhan I'm graduate from Gunadarma University Faculty of Computer Science and Technology Information Major Computer System.</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-left">
               <p>
                 Now I really intrested on web programming and decide to be web developer and start learn about HTML,CSS,API and Javascript. I am still new in web development, therefore I will never
                 stop learning to improve my skill and make a new journey of my life.
@@ -97,10 +100,12 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+              >
               <img src="image/My Portofolio.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
-                <p class="card-text">Project pertama saya membuat website Portofolio</p>
+                <p class="card-text">Project pertama saya membuat website Portofolio,dengan menggunakan google sheet sebagai kotak pos penerima pesan</p>
+                <a href="https://damriz13.github.io/DamarRizky.github.io/" class="btn btn-primary" target="_blank">Click Here</a>
               </div>
             </div>
           </div>
@@ -177,6 +182,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxvE8YG2_hRflRmf08H80tEbWpASvpuOOeRxVKvABndq0aLBRwjuX8gZQPYBo_jsSOF/exec";
       const form = document.forms["my-portofolio-contact"];
